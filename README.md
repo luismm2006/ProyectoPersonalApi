@@ -8,7 +8,7 @@ Aquí iré subiendo ejemplos sencillos (y no tan sencillos más adelante) a medi
 
 ## 📝 Proyectos incluidos
 
-- `01-get-saludo`: Endpoint GET que recibe nombre y edad por URL y devuelve un saludo personalizado.
+- `miniProyectoApiSaludo`: Endpoint GET que recibe nombre y edad por URL y devuelve un saludo personalizado.
 
 ---
 
