@@ -1,6 +1,6 @@
 # 🧪 Pruebas y mini-proyectos con Spring Boot
 
-Este repositorio lo estoy usando para practicar y reforzar conceptos de Spring Boot que vi durante mis prácticas en mis practicas de primer año de DAW y asi usarlas en segundo año.
+Este repositorio lo estoy usando para practicar y reforzar conceptos de Spring Boot que vi durante mis prácticas de primer año de DAW y asi usarlas en segundo año.
 
 Aquí iré subiendo ejemplos sencillos (y no tan sencillos más adelante) a medida que avanzo.
 
