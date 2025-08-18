@@ -14,11 +14,11 @@ public class Productos_Services {
 
         return repositorio.findAll().stream().map(p-> {
             Double precioTotal = p.getPrecio() * 1.50d;
-            p.setPrecio(precioTotal.intValue());
-            return p;
+            Productos nuevoPrecio = new Productos(p.getIdProducto(), p.getNombre(), precioTotal.intValue());
+            return nuevoPrecio;
         }).collect(Collectors.toList());
     }
-
+ 
     public Productos buscaId(Long idProducto){
 
         return repositorio.buscaId(idProducto);
