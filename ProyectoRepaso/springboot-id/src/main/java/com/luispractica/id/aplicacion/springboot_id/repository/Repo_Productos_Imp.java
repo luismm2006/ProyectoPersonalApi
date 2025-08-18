@@ -5,10 +5,10 @@ import java.util.List;
 
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
 
-public class Repo_Productos {
+public class Repo_Productos_Imp implements ProductoRepositorio{
     List<Productos> datos;
 
-    public Repo_Productos(){
+    public Repo_Productos_Imp(){
         this.datos = Arrays.asList(new Productos(001L, "Disco duro 1TB", 500),
                                     new Productos(002L, "Memoria USB 20TB", 150),
                                     new Productos(003L, "Raton Logitec", 50),

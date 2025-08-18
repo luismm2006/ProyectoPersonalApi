@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
-import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services;
+import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services_Imp;
 
 
 
@@ -16,7 +16,7 @@ import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services;
 @RequestMapping("/api")
 public class Product_Controller {
 
-    private  Productos_Services servicio = new Productos_Services();
+    private  Productos_Services_Imp servicio = new Productos_Services_Imp();
 
     @GetMapping()
     public List<Productos> ListaProductos(){

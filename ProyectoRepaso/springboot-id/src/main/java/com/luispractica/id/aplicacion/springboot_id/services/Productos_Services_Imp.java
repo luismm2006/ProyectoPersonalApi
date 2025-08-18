@@ -4,12 +4,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
-import com.luispractica.id.aplicacion.springboot_id.repository.Repo_Productos;
+import com.luispractica.id.aplicacion.springboot_id.repository.Repo_Productos_Imp;
 
-public class Productos_Services {
+public class Productos_Services_Imp implements ProductoServicios{
 
-    private Repo_Productos repositorio = new Repo_Productos();
+    private Repo_Productos_Imp repositorio = new Repo_Productos_Imp();
 
+    @Override
     public List<Productos> findAll(){
 
         return repositorio.findAll().stream().map(p-> {
@@ -19,9 +20,11 @@ public class Productos_Services {
             return newProductos;
         }).collect(Collectors.toList());
     }
-  
-    public Productos buscaId(Long idProducto){
-
+    
+    @Override
+    public Productos buscaId(long idProducto) {
         return repositorio.buscaId(idProducto);
-    }    
+    }
+
+        
 }
