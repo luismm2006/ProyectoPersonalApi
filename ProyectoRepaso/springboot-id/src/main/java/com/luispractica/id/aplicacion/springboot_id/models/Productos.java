@@ -1,6 +1,6 @@
 package com.luispractica.id.aplicacion.springboot_id.models;
 
-public class Productos {
+public class Productos implements Cloneable{
     private Long idProducto;
     private String nombre;
     private int precio;
@@ -27,6 +27,14 @@ public class Productos {
     }
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+    @Override
+    public  Object clone(){
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            return new Productos(idProducto, nombre, precio);
+        }
     }
     
 }
