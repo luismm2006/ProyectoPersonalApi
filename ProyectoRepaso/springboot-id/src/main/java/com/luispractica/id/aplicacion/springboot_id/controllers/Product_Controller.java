@@ -16,18 +16,19 @@ import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services;
 @RequestMapping("/api")
 public class Product_Controller {
 
-    private  Productos_Services servicio = new Productos_Services();
+    //private  Productos_Services servicio = new Productos_Services();
 
     @GetMapping()
     public List<Productos> ListaProductos(){
+        Productos_Services servicio = new Productos_Services();
+
         return servicio.findAll();
     }
 
     @GetMapping("/{idProducto}")
     public Productos mostrar(@PathVariable long idProducto){
-
+        Productos_Services servicio = new Productos_Services();
         return servicio.buscaId(idProducto);
-
     }
 
 }
