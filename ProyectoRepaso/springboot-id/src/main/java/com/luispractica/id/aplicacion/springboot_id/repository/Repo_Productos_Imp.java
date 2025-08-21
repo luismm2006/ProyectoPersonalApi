@@ -3,11 +3,11 @@ package com.luispractica.id.aplicacion.springboot_id.repository;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
 
-@Component
+@Repository
 public class Repo_Productos_Imp implements ProductoRepositorio{
     List<Productos> datos;
     
