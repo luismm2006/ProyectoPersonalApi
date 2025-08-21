@@ -3,12 +3,17 @@ package com.luispractica.id.aplicacion.springboot_id.services;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
 import com.luispractica.id.aplicacion.springboot_id.repository.Repo_Productos_Imp;
 
+@Component
 public class Productos_Services_Imp implements ProductoServicios{
 
-    private Repo_Productos_Imp repositorio = new Repo_Productos_Imp();
+    @Autowired
+    private Repo_Productos_Imp repositorio;
 
     @Override
     public List<Productos> findAll(){
