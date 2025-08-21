@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.luispractica.id.aplicacion.springboot_id.models.Productos;
-import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services_Imp;
+import com.luispractica.id.aplicacion.springboot_id.services.ProductoServicios;
 
 
 
@@ -18,7 +18,7 @@ import com.luispractica.id.aplicacion.springboot_id.services.Productos_Services_
 public class Product_Controller {
 
     @Autowired
-    private  Productos_Services_Imp servicio;
+    private  ProductoServicios servicio;
 
     @GetMapping()
     public List<Productos> ListaProductos(){
